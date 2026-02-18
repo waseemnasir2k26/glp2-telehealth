@@ -1,0 +1,149 @@
+@import url('https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --primary: #0D4F4F;
+  --accent: #C9A84C;
+  --background: #FAFAF7;
+  --dark: #0A1628;
+  --text-primary: #1A1A2E;
+  --text-secondary: #6B7280;
+  --success: #22C55E;
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Plus Jakarta Sans', system-ui, sans-serif;
+  background-color: var(--background);
+  color: var(--text-primary);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Instrument Serif', Georgia, serif;
+  font-weight: 400;
+}
+
+@layer utilities {
+  .text-gradient {
+    @apply bg-clip-text text-transparent bg-gradient-to-r from-primary to-primary-400;
+  }
+
+  .glass-card {
+    @apply bg-white/80 backdrop-blur-xl border border-white/20 shadow-soft;
+  }
+
+  .glass-card-dark {
+    @apply bg-dark/80 backdrop-blur-xl border border-white/10 shadow-medium;
+  }
+
+  .btn-primary {
+    @apply inline-flex items-center justify-center px-6 py-3 bg-accent text-dark font-semibold rounded-xl
+           hover:bg-accent-400 transition-all duration-300 shadow-soft hover:shadow-medium hover:-translate-y-0.5;
+  }
+
+  .btn-secondary {
+    @apply inline-flex items-center justify-center px-6 py-3 bg-primary text-white font-semibold rounded-xl
+           hover:bg-primary-400 transition-all duration-300 shadow-soft hover:shadow-medium hover:-translate-y-0.5;
+  }
+
+  .btn-ghost {
+    @apply inline-flex items-center justify-center px-6 py-3 border-2 border-primary text-primary font-semibold rounded-xl
+           hover:bg-primary hover:text-white transition-all duration-300;
+  }
+
+  .card-hover {
+    @apply transition-all duration-300 hover:shadow-medium hover:-translate-y-1;
+  }
+
+  .section-padding {
+    @apply py-16 md:py-24 lg:py-32;
+  }
+
+  .container-padding {
+    @apply px-4 sm:px-6 lg:px-8;
+  }
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #0D4F4F;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #0A3F3F;
+}
+
+/* Animations */
+.animate-on-scroll {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+.animate-on-scroll.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Form styles */
+input, textarea, select {
+  @apply w-full px-4 py-3 bg-white border border-gray-200 rounded-xl
+         focus:outline-none focus:ring-2 focus:ring-primary/20 focus:border-primary
+         transition-all duration-200;
+}
+
+input::placeholder, textarea::placeholder {
+  @apply text-text-secondary;
+}
+
+/* Progress ring animation */
+@keyframes progress {
+  0% {
+    stroke-dashoffset: 100;
+  }
+}
+
+.progress-ring-animate {
+  animation: progress 1.5s ease-out forwards;
+}
+
+/* Dot pattern background */
+.dot-pattern {
+  background-image: radial-gradient(circle, #0D4F4F 1px, transparent 1px);
+  background-size: 24px 24px;
+}
+
+/* Gradient mesh */
+.gradient-mesh {
+  background:
+    radial-gradient(at 40% 20%, rgba(13, 79, 79, 0.1) 0px, transparent 50%),
+    radial-gradient(at 80% 0%, rgba(201, 168, 76, 0.1) 0px, transparent 50%),
+    radial-gradient(at 0% 50%, rgba(13, 79, 79, 0.05) 0px, transparent 50%),
+    radial-gradient(at 80% 50%, rgba(201, 168, 76, 0.05) 0px, transparent 50%),
+    radial-gradient(at 0% 100%, rgba(13, 79, 79, 0.1) 0px, transparent 50%);
+}
