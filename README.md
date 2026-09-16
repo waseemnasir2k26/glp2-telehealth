@@ -2,6 +2,10 @@
 
 A complete, production-ready telehealth demo website for GLP-2 weight management therapy. Built with Next.js 14, Tailwind CSS, Framer Motion, and TypeScript.
 
+## Status
+
+Last reviewed: September 2026 · release v2026.09
+
 ![VitalPath Demo](https://img.shields.io/badge/Demo-Live-green) ![Next.js](https://img.shields.io/badge/Next.js-14-black) ![TypeScript](https://img.shields.io/badge/TypeScript-5.0-blue) ![Tailwind CSS](https://img.shields.io/badge/Tailwind-3.4-38bdf8)
 
 ## Features
