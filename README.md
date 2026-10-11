@@ -4,7 +4,7 @@ A complete, production-ready telehealth demo website for GLP-2 weight management
 
 ## Status
 
-Last reviewed: September 2026 · release v2026.09
+Last reviewed: October 2026 · release v2026.10
 
 ![VitalPath Demo](https://img.shields.io/badge/Demo-Live-green) ![Next.js](https://img.shields.io/badge/Next.js-14-black) ![TypeScript](https://img.shields.io/badge/TypeScript-5.0-blue) ![Tailwind CSS](https://img.shields.io/badge/Tailwind-3.4-38bdf8)
 
@@ -151,3 +151,11 @@ This is a demo project. All rights reserved.
 ---
 
 Built with care for VitalPath Health, Inc.
+
+## Work with SkynetLabs
+
+Built by [Waseem Nasir](https://www.skynetjoe.com/?utm_source=github&utm_medium=readme&utm_campaign=glp2-telehealth) at SkynetLabs — n8n + AI automation for small businesses.
+
+- Hire on Fiverr: https://www.fiverr.com/agencies/skynetjoellc
+- Hire on Upwork: https://www.upwork.com/freelancers/muhammadwaseemnasir
+- Book a free call: https://calendly.com/skynetlabs/schedule-a-free-consultation
